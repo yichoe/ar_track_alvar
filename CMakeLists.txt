@@ -25,7 +25,7 @@ find_package(catkin COMPONENTS
         REQUIRED)
 
 find_package(Eigen REQUIRED)
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 2 REQUIRED)
 find_package(TinyXML REQUIRED)
 
 # dynamic reconfigure support
@@ -52,7 +52,7 @@ catkin_package(
         dynamic_reconfigure
 )
 
-include_directories(include 
+include_directories(include
                     ${catkin_INCLUDE_DIRS}
                     ${OpenCV_INCLUDE_DIRS}
                     ${TinyXML_INCLUDE_DIRS}
